@@ -1,16 +1,10 @@
-import os
-import librosa
-# La începutul scriptului
-import sys
 import io
 import multiprocessing
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-
+import os
+# La începutul scriptului
+import sys
 from trainer import Trainer, TrainerArgs
-
-from torch.utils.tensorboard import SummaryWriter
-
-
+import librosa
 
 from TTS.tts.configs.shared_configs import BaseDatasetConfig
 from TTS.tts.configs.vits_config import VitsConfig
@@ -18,6 +12,12 @@ from TTS.tts.datasets import load_tts_samples
 from TTS.tts.models.vits import Vits, VitsAudioConfig
 from TTS.tts.utils.text.tokenizer import TTSTokenizer
 from TTS.utils.audio import AudioProcessor
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
+
+
+
 # from TTS.tts.configs.shared_configs import CharactersConfig
 # from pathlib import Path
 
@@ -29,7 +29,7 @@ def main():
     dataset_config = BaseDatasetConfig(
         formatter="ljspeech",
         meta_file_train="metadata.csv",
-        path=r"F:\LICENTA2025\BachelorWorkspace\dataset\training"   
+        path=r"F:\LICENTA2025\BachelorWorkspace\dataset\training"
     )
 
     audio_config = VitsAudioConfig(

@@ -1,0 +1,696 @@
+ > Training Environment:
+ | > Backend: Torch
+ | > Mixed precision: True
+ | > Precision: fp16
+ | > Num. of CPUs: 4
+ | > Num. of Torch Threads: 4
+ | > Torch seed: 54321
+ | > Torch CUDNN: True
+ | > Torch CUDNN deterministic: False
+ | > Torch CUDNN benchmark: False
+ | > Torch TF32 MatMul: False
+ > Start Tensorboard: tensorboard --logdir=F:\LICENTA2025\BachelorWorkspace\romanian_hug_face_tts\Bachelor_Thesis_TTS\fine_tuned_models\fine_tuning_vits_romanian-April-27-2025_10+15PM-ca48aec
+ > Restoring from model_file.pth ...
+ > Restoring Model...
+ > Partial model initialization...
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.0.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.0.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.1.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.1.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.2.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.2.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.3.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.3.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.4.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.4.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.5.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.5.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.6.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.6.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.7.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.7.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.8.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.8.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.9.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.9.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.10.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.10.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.11.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.11.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.12.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.12.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.13.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.13.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.14.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.14.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.15.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.in_layers.15.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.0.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.0.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.1.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.1.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.2.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.2.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.3.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.3.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.4.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.4.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.5.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.5.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.6.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.6.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.7.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.7.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.8.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.8.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.9.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.9.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.10.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.10.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.11.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.11.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.12.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.12.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.13.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.13.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.14.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.14.weight_v
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.15.weight_g
+ | > Layer missing in the model definition: posterior_encoder.enc.res_skip_layers.15.weight_v
+ | > Layer missing in the model definition: flow.flows.0.enc.in_layers.0.weight_g
+ | > Layer missing in the model definition: flow.flows.0.enc.in_layers.0.weight_v
+ | > Layer missing in the model definition: flow.flows.0.enc.in_layers.1.weight_g
+ | > Layer missing in the model definition: flow.flows.0.enc.in_layers.1.weight_v
+ | > Layer missing in the model definition: flow.flows.0.enc.in_layers.2.weight_g
+ | > Layer missing in the model definition: flow.flows.0.enc.in_layers.2.weight_v
+ | > Layer missing in the model definition: flow.flows.0.enc.in_layers.3.weight_g
+ | > Layer missing in the model definition: flow.flows.0.enc.in_layers.3.weight_v
+ | > Layer missing in the model definition: flow.flows.0.enc.res_skip_layers.0.weight_g
+ | > Layer missing in the model definition: flow.flows.0.enc.res_skip_layers.0.weight_v
+ | > Layer missing in the model definition: flow.flows.0.enc.res_skip_layers.1.weight_g
+ | > Layer missing in the model definition: flow.flows.0.enc.res_skip_layers.1.weight_v
+ | > Layer missing in the model definition: flow.flows.0.enc.res_skip_layers.2.weight_g
+ | > Layer missing in the model definition: flow.flows.0.enc.res_skip_layers.2.weight_v
+ | > Layer missing in the model definition: flow.flows.0.enc.res_skip_layers.3.weight_g
+ | > Layer missing in the model definition: flow.flows.0.enc.res_skip_layers.3.weight_v
+ | > Layer missing in the model definition: flow.flows.1.enc.in_layers.0.weight_g
+ | > Layer missing in the model definition: flow.flows.1.enc.in_layers.0.weight_v
+ | > Layer missing in the model definition: flow.flows.1.enc.in_layers.1.weight_g
+ | > Layer missing in the model definition: flow.flows.1.enc.in_layers.1.weight_v
+ | > Layer missing in the model definition: flow.flows.1.enc.in_layers.2.weight_g
+ | > Layer missing in the model definition: flow.flows.1.enc.in_layers.2.weight_v
+ | > Layer missing in the model definition: flow.flows.1.enc.in_layers.3.weight_g
+ | > Layer missing in the model definition: flow.flows.1.enc.in_layers.3.weight_v
+ | > Layer missing in the model definition: flow.flows.1.enc.res_skip_layers.0.weight_g
+ | > Layer missing in the model definition: flow.flows.1.enc.res_skip_layers.0.weight_v
+ | > Layer missing in the model definition: flow.flows.1.enc.res_skip_layers.1.weight_g
+ | > Layer missing in the model definition: flow.flows.1.enc.res_skip_layers.1.weight_v
+ | > Layer missing in the model definition: flow.flows.1.enc.res_skip_layers.2.weight_g
+ | > Layer missing in the model definition: flow.flows.1.enc.res_skip_layers.2.weight_v
+ | > Layer missing in the model definition: flow.flows.1.enc.res_skip_layers.3.weight_g
+ | > Layer missing in the model definition: flow.flows.1.enc.res_skip_layers.3.weight_v
+ | > Layer missing in the model definition: flow.flows.2.enc.in_layers.0.weight_g
+ | > Layer missing in the model definition: flow.flows.2.enc.in_layers.0.weight_v
+ | > Layer missing in the model definition: flow.flows.2.enc.in_layers.1.weight_g
+ | > Layer missing in the model definition: flow.flows.2.enc.in_layers.1.weight_v
+ | > Layer missing in the model definition: flow.flows.2.enc.in_layers.2.weight_g
+ | > Layer missing in the model definition: flow.flows.2.enc.in_layers.2.weight_v
+ | > Layer missing in the model definition: flow.flows.2.enc.in_layers.3.weight_g
+ | > Layer missing in the model definition: flow.flows.2.enc.in_layers.3.weight_v
+ | > Layer missing in the model definition: flow.flows.2.enc.res_skip_layers.0.weight_g
+ | > Layer missing in the model definition: flow.flows.2.enc.res_skip_layers.0.weight_v
+ | > Layer missing in the model definition: flow.flows.2.enc.res_skip_layers.1.weight_g
+ | > Layer missing in the model definition: flow.flows.2.enc.res_skip_layers.1.weight_v
+ | > Layer missing in the model definition: flow.flows.2.enc.res_skip_layers.2.weight_g
+ | > Layer missing in the model definition: flow.flows.2.enc.res_skip_layers.2.weight_v
+ | > Layer missing in the model definition: flow.flows.2.enc.res_skip_layers.3.weight_g
+ | > Layer missing in the model definition: flow.flows.2.enc.res_skip_layers.3.weight_v
+ | > Layer missing in the model definition: flow.flows.3.enc.in_layers.0.weight_g
+ | > Layer missing in the model definition: flow.flows.3.enc.in_layers.0.weight_v
+ | > Layer missing in the model definition: flow.flows.3.enc.in_layers.1.weight_g
+ | > Layer missing in the model definition: flow.flows.3.enc.in_layers.1.weight_v
+ | > Layer missing in the model definition: flow.flows.3.enc.in_layers.2.weight_g
+ | > Layer missing in the model definition: flow.flows.3.enc.in_layers.2.weight_v
+ | > Layer missing in the model definition: flow.flows.3.enc.in_layers.3.weight_g
+ | > Layer missing in the model definition: flow.flows.3.enc.in_layers.3.weight_v
+ | > Layer missing in the model definition: flow.flows.3.enc.res_skip_layers.0.weight_g
+ | > Layer missing in the model definition: flow.flows.3.enc.res_skip_layers.0.weight_v
+ | > Layer missing in the model definition: flow.flows.3.enc.res_skip_layers.1.weight_g
+ | > Layer missing in the model definition: flow.flows.3.enc.res_skip_layers.1.weight_v
+ | > Layer missing in the model definition: flow.flows.3.enc.res_skip_layers.2.weight_g
+ | > Layer missing in the model definition: flow.flows.3.enc.res_skip_layers.2.weight_v
+ | > Layer missing in the model definition: flow.flows.3.enc.res_skip_layers.3.weight_g
+ | > Layer missing in the model definition: flow.flows.3.enc.res_skip_layers.3.weight_v
+ | > Layer missing in the model definition: waveform_decoder.ups.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.ups.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.ups.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.ups.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.ups.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.ups.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.ups.3.weight_g
+ | > Layer missing in the model definition: waveform_decoder.ups.3.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.0.convs1.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.0.convs1.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.0.convs1.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.0.convs1.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.0.convs1.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.0.convs1.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.0.convs2.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.0.convs2.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.0.convs2.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.0.convs2.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.0.convs2.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.0.convs2.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.1.convs1.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.1.convs1.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.1.convs1.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.1.convs1.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.1.convs1.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.1.convs1.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.1.convs2.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.1.convs2.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.1.convs2.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.1.convs2.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.1.convs2.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.1.convs2.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.2.convs1.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.2.convs1.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.2.convs1.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.2.convs1.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.2.convs1.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.2.convs1.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.2.convs2.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.2.convs2.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.2.convs2.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.2.convs2.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.2.convs2.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.2.convs2.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.3.convs1.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.3.convs1.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.3.convs1.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.3.convs1.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.3.convs1.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.3.convs1.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.3.convs2.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.3.convs2.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.3.convs2.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.3.convs2.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.3.convs2.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.3.convs2.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.4.convs1.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.4.convs1.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.4.convs1.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.4.convs1.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.4.convs1.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.4.convs1.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.4.convs2.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.4.convs2.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.4.convs2.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.4.convs2.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.4.convs2.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.4.convs2.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.5.convs1.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.5.convs1.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.5.convs1.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.5.convs1.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.5.convs1.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.5.convs1.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.5.convs2.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.5.convs2.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.5.convs2.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.5.convs2.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.5.convs2.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.5.convs2.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.6.convs1.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.6.convs1.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.6.convs1.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.6.convs1.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.6.convs1.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.6.convs1.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.6.convs2.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.6.convs2.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.6.convs2.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.6.convs2.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.6.convs2.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.6.convs2.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.7.convs1.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.7.convs1.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.7.convs1.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.7.convs1.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.7.convs1.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.7.convs1.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.7.convs2.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.7.convs2.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.7.convs2.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.7.convs2.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.7.convs2.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.7.convs2.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.8.convs1.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.8.convs1.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.8.convs1.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.8.convs1.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.8.convs1.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.8.convs1.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.8.convs2.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.8.convs2.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.8.convs2.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.8.convs2.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.8.convs2.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.8.convs2.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.9.convs1.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.9.convs1.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.9.convs1.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.9.convs1.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.9.convs1.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.9.convs1.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.9.convs2.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.9.convs2.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.9.convs2.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.9.convs2.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.9.convs2.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.9.convs2.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.10.convs1.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.10.convs1.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.10.convs1.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.10.convs1.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.10.convs1.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.10.convs1.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.10.convs2.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.10.convs2.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.10.convs2.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.10.convs2.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.10.convs2.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.10.convs2.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.11.convs1.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.11.convs1.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.11.convs1.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.11.convs1.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.11.convs1.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.11.convs1.2.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.11.convs2.0.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.11.convs2.0.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.11.convs2.1.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.11.convs2.1.weight_v
+ | > Layer missing in the model definition: waveform_decoder.resblocks.11.convs2.2.weight_g
+ | > Layer missing in the model definition: waveform_decoder.resblocks.11.convs2.2.weight_v
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.4.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.4.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.5.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.5.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.6.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.6.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.7.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.7.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.8.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.8.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.9.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.9.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.10.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.10.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.11.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.11.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.12.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.12.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.13.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.13.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.14.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.14.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.15.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.in_layers.15.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.4.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.4.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.5.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.5.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.6.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.6.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.7.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.7.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.8.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.8.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.9.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.9.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.10.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.10.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.11.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.11.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.12.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.12.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.13.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.13.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.14.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.14.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.15.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: posterior_encoder.enc.res_skip_layers.15.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.0.enc.in_layers.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.0.enc.in_layers.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.0.enc.in_layers.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.0.enc.in_layers.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.0.enc.in_layers.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.0.enc.in_layers.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.0.enc.in_layers.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.0.enc.in_layers.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.0.enc.res_skip_layers.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.0.enc.res_skip_layers.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.0.enc.res_skip_layers.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.0.enc.res_skip_layers.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.0.enc.res_skip_layers.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.0.enc.res_skip_layers.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.0.enc.res_skip_layers.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.0.enc.res_skip_layers.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.1.enc.in_layers.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.1.enc.in_layers.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.1.enc.in_layers.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.1.enc.in_layers.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.1.enc.in_layers.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.1.enc.in_layers.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.1.enc.in_layers.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.1.enc.in_layers.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.1.enc.res_skip_layers.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.1.enc.res_skip_layers.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.1.enc.res_skip_layers.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.1.enc.res_skip_layers.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.1.enc.res_skip_layers.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.1.enc.res_skip_layers.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.1.enc.res_skip_layers.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.1.enc.res_skip_layers.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.2.enc.in_layers.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.2.enc.in_layers.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.2.enc.in_layers.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.2.enc.in_layers.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.2.enc.in_layers.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.2.enc.in_layers.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.2.enc.in_layers.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.2.enc.in_layers.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.2.enc.res_skip_layers.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.2.enc.res_skip_layers.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.2.enc.res_skip_layers.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.2.enc.res_skip_layers.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.2.enc.res_skip_layers.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.2.enc.res_skip_layers.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.2.enc.res_skip_layers.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.2.enc.res_skip_layers.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.3.enc.in_layers.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.3.enc.in_layers.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.3.enc.in_layers.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.3.enc.in_layers.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.3.enc.in_layers.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.3.enc.in_layers.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.3.enc.in_layers.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.3.enc.in_layers.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.3.enc.res_skip_layers.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.3.enc.res_skip_layers.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.3.enc.res_skip_layers.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.3.enc.res_skip_layers.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.3.enc.res_skip_layers.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.3.enc.res_skip_layers.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: flow.flows.3.enc.res_skip_layers.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: flow.flows.3.enc.res_skip_layers.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.ups.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.ups.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.ups.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.ups.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.ups.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.ups.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.ups.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.ups.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.0.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.0.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.0.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.0.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.0.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.0.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.0.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.0.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.0.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.0.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.0.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.0.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.1.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.1.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.1.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.1.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.1.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.1.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.1.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.1.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.1.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.1.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.1.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.1.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.2.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.2.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.2.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.2.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.2.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.2.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.2.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.2.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.2.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.2.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.2.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.2.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.3.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.3.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.3.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.3.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.3.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.3.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.3.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.3.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.3.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.3.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.3.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.3.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.4.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.4.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.4.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.4.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.4.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.4.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.4.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.4.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.4.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.4.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.4.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.4.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.5.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.5.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.5.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.5.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.5.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.5.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.5.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.5.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.5.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.5.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.5.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.5.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.6.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.6.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.6.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.6.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.6.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.6.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.6.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.6.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.6.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.6.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.6.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.6.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.7.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.7.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.7.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.7.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.7.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.7.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.7.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.7.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.7.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.7.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.7.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.7.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.8.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.8.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.8.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.8.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.8.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.8.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.8.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.8.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.8.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.8.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.8.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.8.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.9.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.9.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.9.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.9.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.9.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.9.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.9.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.9.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.9.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.9.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.9.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.9.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.10.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.10.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.10.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.10.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.10.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.10.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.10.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.10.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.10.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.10.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.10.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.10.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.11.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.11.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.11.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.11.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.11.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.11.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.11.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.11.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.11.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.11.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.11.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: waveform_decoder.resblocks.11.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.0.convs.0.bias
+ | > Layer missing in the checkpoint: disc.nets.0.convs.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.0.convs.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.0.convs.1.bias
+ | > Layer missing in the checkpoint: disc.nets.0.convs.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.0.convs.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.0.convs.2.bias
+ | > Layer missing in the checkpoint: disc.nets.0.convs.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.0.convs.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.0.convs.3.bias
+ | > Layer missing in the checkpoint: disc.nets.0.convs.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.0.convs.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.0.convs.4.bias
+ | > Layer missing in the checkpoint: disc.nets.0.convs.4.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.0.convs.4.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.0.convs.5.bias
+ | > Layer missing in the checkpoint: disc.nets.0.convs.5.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.0.convs.5.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.0.conv_post.bias
+ | > Layer missing in the checkpoint: disc.nets.0.conv_post.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.0.conv_post.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.1.convs.0.bias
+ | > Layer missing in the checkpoint: disc.nets.1.convs.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.1.convs.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.1.convs.1.bias
+ | > Layer missing in the checkpoint: disc.nets.1.convs.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.1.convs.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.1.convs.2.bias
+ | > Layer missing in the checkpoint: disc.nets.1.convs.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.1.convs.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.1.convs.3.bias
+ | > Layer missing in the checkpoint: disc.nets.1.convs.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.1.convs.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.1.convs.4.bias
+ | > Layer missing in the checkpoint: disc.nets.1.convs.4.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.1.convs.4.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.1.conv_post.bias
+ | > Layer missing in the checkpoint: disc.nets.1.conv_post.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.1.conv_post.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.2.convs.0.bias
+ | > Layer missing in the checkpoint: disc.nets.2.convs.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.2.convs.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.2.convs.1.bias
+ | > Layer missing in the checkpoint: disc.nets.2.convs.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.2.convs.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.2.convs.2.bias
+ | > Layer missing in the checkpoint: disc.nets.2.convs.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.2.convs.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.2.convs.3.bias
+ | > Layer missing in the checkpoint: disc.nets.2.convs.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.2.convs.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.2.convs.4.bias
+ | > Layer missing in the checkpoint: disc.nets.2.convs.4.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.2.convs.4.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.2.conv_post.bias
+ | > Layer missing in the checkpoint: disc.nets.2.conv_post.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.2.conv_post.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.3.convs.0.bias
+ | > Layer missing in the checkpoint: disc.nets.3.convs.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.3.convs.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.3.convs.1.bias
+ | > Layer missing in the checkpoint: disc.nets.3.convs.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.3.convs.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.3.convs.2.bias
+ | > Layer missing in the checkpoint: disc.nets.3.convs.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.3.convs.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.3.convs.3.bias
+ | > Layer missing in the checkpoint: disc.nets.3.convs.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.3.convs.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.3.convs.4.bias
+ | > Layer missing in the checkpoint: disc.nets.3.convs.4.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.3.convs.4.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.3.conv_post.bias
+ | > Layer missing in the checkpoint: disc.nets.3.conv_post.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.3.conv_post.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.4.convs.0.bias
+ | > Layer missing in the checkpoint: disc.nets.4.convs.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.4.convs.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.4.convs.1.bias
+ | > Layer missing in the checkpoint: disc.nets.4.convs.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.4.convs.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.4.convs.2.bias
+ | > Layer missing in the checkpoint: disc.nets.4.convs.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.4.convs.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.4.convs.3.bias
+ | > Layer missing in the checkpoint: disc.nets.4.convs.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.4.convs.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.4.convs.4.bias
+ | > Layer missing in the checkpoint: disc.nets.4.convs.4.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.4.convs.4.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.4.conv_post.bias
+ | > Layer missing in the checkpoint: disc.nets.4.conv_post.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.4.conv_post.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.5.convs.0.bias
+ | > Layer missing in the checkpoint: disc.nets.5.convs.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.5.convs.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.5.convs.1.bias
+ | > Layer missing in the checkpoint: disc.nets.5.convs.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.5.convs.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.5.convs.2.bias
+ | > Layer missing in the checkpoint: disc.nets.5.convs.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.5.convs.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.5.convs.3.bias
+ | > Layer missing in the checkpoint: disc.nets.5.convs.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.5.convs.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.5.convs.4.bias
+ | > Layer missing in the checkpoint: disc.nets.5.convs.4.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.5.convs.4.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: disc.nets.5.conv_post.bias
+ | > Layer missing in the checkpoint: disc.nets.5.conv_post.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: disc.nets.5.conv_post.parametrizations.weight.original1
+ | > Layer dimention missmatch between model definition and checkpoint: text_encoder.emb.weight
+ | > 557 / 949 layers are restored.
+ > Model restored from step 1000000
+
+ > Model has 83035564 parameters
+
+[4m[1m > EPOCH: 0/200[0m
+ --> F:\LICENTA2025\BachelorWorkspace\romanian_hug_face_tts\Bachelor_Thesis_TTS\fine_tuned_models\fine_tuning_vits_romanian-April-27-2025_10+15PM-ca48aec
+
+[1m > TRAINING (2025-04-27 22:15:08) [0m

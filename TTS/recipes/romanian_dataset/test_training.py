@@ -7,10 +7,10 @@ if sys.stdout.encoding != 'utf-8':
     sys.stdout.reconfigure(encoding='utf-8')
 
 # Calea către modelul antrenat și configurație
-MODEL_PATH = r"F:\LICENTA2025\BachelorWorkspace\modele_antrenate\vits\vits_romanian_small_ds_testrun-April-10-2025_12+13AM-dbf1a08a\best_model_666.pth"
-CONFIG_PATH = r"F:\LICENTA2025\BachelorWorkspace\modele_antrenate\vits\vits_romanian_small_ds_testrun-April-10-2025_12+13AM-dbf1a08a\config.json"
-OUTPUT_PATH_WAV = r"F:\LICENTA2025\BachelorWorkspace\output_tts\compare_small_vs_extended_ds\small\wav_small_unknown_data"
-OUTPUT_PATH_TEST_TRANSCRIPT = r"F:\LICENTA2025\BachelorWorkspace\output_tts\compare_small_vs_extended_ds\small\transcript_small_unknown_data"
+MODEL_PATH = r"F:\LICENTA2025\BachelorWorkspace\romanian_hug_face_tts\Bachelor_Thesis_TTS\TTS\recipes\romanian_dataset\vits-romanian-finetune-April-28-2025_07+03PM-ca48aec\checkpoint_1007500.pth"
+CONFIG_PATH = r"F:\LICENTA2025\BachelorWorkspace\romanian_hug_face_tts\Bachelor_Thesis_TTS\TTS\recipes\romanian_dataset\vits-romanian-finetune-April-28-2025_07+03PM-ca48aec\config.json"
+OUTPUT_PATH_WAV = r"F:\LICENTA2025\BachelorWorkspace\romanian_hug_face_tts\Bachelor_Thesis_TTS\TTS\recipes\romanian_dataset\vits-romanian-finetune-April-28-2025_07+03PM-ca48aec\results_checkpoint_7500\wav_unknown_data"
+OUTPUT_PATH_TEST_TRANSCRIPT = r"F:\LICENTA2025\BachelorWorkspace\romanian_hug_face_tts\Bachelor_Thesis_TTS\TTS\recipes\romanian_dataset\vits-romanian-finetune-April-28-2025_07+03PM-ca48aec\results_checkpoint_7500\transcript_unknown_data"
 
 # Asigură-te că directorul de ieșire există
 os.makedirs(OUTPUT_PATH_WAV, exist_ok=True)
@@ -68,7 +68,7 @@ def normalize_romanian_text(text):
     return text
 
 # Generează și salvează audio pentru fiecare propoziție
-for i, text in enumerate(test_ground_truth):
+for i, text in enumerate(test_unknown_data):
     # Normalizează textul
     normalized_text = normalize_romanian_text(text)
     
